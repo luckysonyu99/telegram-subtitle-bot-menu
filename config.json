@@ -1,0 +1,10 @@
+{
+  "model_size": "tiny",
+  "language": "zh",
+  "max_video_duration": 300,
+  "output_format": "srt",
+  "enable_timestamp": true,
+  "font_size": 16,
+  "font_color": "white",
+  "background_color": "black"
+} 

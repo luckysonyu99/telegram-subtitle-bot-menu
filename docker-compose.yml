@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: telegram-subtitle-bot
+    volumes:
+      - ./videos:/app/videos
+      - ./fonts:/app/fonts
+      - ./whisper_cache:/root/.cache/whisper
+    env_file:
+      - .env
+    environment:
+      - TZ=Asia/Shanghai
+    restart: unless-stopped
